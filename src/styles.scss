@@ -1,1 +1,231 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Notable&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Notable&family=Smythe&display=swap');
+
+h3 {
+    display: inline;
+    align-self: center;
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+span {
+    align-self: center;
+}
+
+body {
+    background-image: url(./assets/background-alternativo.jpg);
+    background-size: cover;
+}
+
+main {
+    font-family: "Smythe", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.3rem;
+    min-height: 100vh;
+}
+
+header {
+    height: 230px;
+    background: rgba(7, 5, 40, 0.264);
+    background: linear-gradient(0deg, rgba(7, 5, 40, 0) 0%, rgba(10, 106, 194, 0.701) 100%);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    height: 100px;
+    background: rgba(7, 5, 40, 0.264);
+    background: linear-gradient(0deg, rgba(10, 105, 194, 0.701) 0%, rgba(7, 5, 40, 0) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+dialog{
+    min-width: 200px;
+    border-radius: 20%;
+    background: rgba(7, 5, 40, 0.264);
+    background: linear-gradient(0deg, rgba(7, 5, 40, 0.555) 0%, rgba(10, 105, 194, 0.999) 100%);
+    font-family: "Smythe", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: large;
+    color: #f9cd8b;
+}
+
+.head {
+    color: #f9cd8b;
+    font-size: 3rem;
+}
+
+.foot {
+    color: #f9cd8b;
+    font-size: x-large;
+}
+
+.mother {
+    display: flex;
+    flex-direction: column;
+}
+
+.father {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ancestor-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    row-gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.no-margin {
+    margin: 0px;
+}
+
+.avatar-container {
+    margin-right: 20px;
+}
+
+.avatar {
+    width: 200px;
+    border-radius: 50%;
+    box-shadow: 6px 6px 1px 1px #44404038;
+}
+
+.notable-regular {
+    font-family: "Notable", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.logo {
+    width: 64px;
+    justify-self: center;
+    align-self: center;
+    border-radius: 50%;
+}
+
+button {
+    min-width: 150px;
+    border-radius: 20%;
+    background: rgba(7, 5, 40, 0.264);
+    background: linear-gradient(0deg, rgba(7, 5, 40, 0) 0%, rgba(10, 106, 194, 0.701) 100%);
+    font-family: "Smythe", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: large;
+    color: #f9cd8b;
+}
+
+button:hover{
+    background: linear-gradient(0deg, rgba(22, 13, 196, 0) 0%, rgba(152, 177, 201, 0.701) 100%);
+}
+
+.external-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.student-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 10px 10px 1px 1px #fff3f35e;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #fff3f35e;
+    border-radius: 12px;
+    padding: 12px;
+    width: 30%;
+    margin: 20px;
+    box-sizing: border-box;
+    background-color: #F5F5F5;
+}
+
+.information-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.divider {
+    width: 80%;
+    height: 5px;
+    background: rgba(7, 5, 40, 0.264);
+    background: linear-gradient(270deg, rgba(7, 5, 40, 0.462) 0%, rgba(10, 106, 194, 0.701) 100%);
+    border-radius: 50%;
+}
+
+.student-form{
+    margin: 20px;
+    text-align: center;
+    background-color: rgba(10, 105, 194, 0.879);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    font-weight: 700;
+}
+
+input, select {
+    background-color: #f9cd8b;
+    color: black;
+}
+
+.settings-button{
+    min-width: 30px;
+    color: black;
+    font-weight: 700;
+}
+
+.dialog-btn{
+    min-width: 30px;
+    font-weight: 700;
+    margin-left: 20px;
+}
+
+@media (max-width: 800px) {
+    header {
+        height: auto;
+        padding: 20px;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+        font-size: 1.8rem;
+        word-wrap: break-word;
+    }
+
+    button {
+        width: 100%;
+        font-size: medium;
+        margin: 5px 0;
+    }
+
+    .external-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .student-container {
+        width: 99%;
+        margin: 10px 0;
+    }
+
+    .divider {
+        width: 99%;
+    }
+}

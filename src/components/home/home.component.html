@@ -1,1 +1,23 @@
-<p>home works!</p>
+<header>
+    <h1 class="head notable-regular">Student Randomizer</h1>
+    <div>
+        <a [routerLink]="['/']"><button onclick=""><div class="mother">
+            <img class="logo" src="./assets/name-icon.jpg" alt="">Pagina Principale
+        </div></button></a>        
+        <button onclick="shuffle()"> <div class="mother">
+            <img img class="logo" src="./assets/randomize-icon.jpg" alt=""> Randomizza 
+        </div></button>
+        <a [routerLink]="['/add']"><button onclick=""> <div class="mother">
+            <img img class="logo" src="./assets/age-icon.jpg" alt=""> Aggiungi Studente
+        </div></button></a>        
+    </div>
+
+</header>
+
+<main>
+    <app-student-card></app-student-card>
+</main>
+
+<footer>
+    <span class="foot">©copyright student randomizer s.r.l. 2025</span>
+</footer>
